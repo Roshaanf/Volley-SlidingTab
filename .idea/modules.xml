@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VolleyProject.iml" filepath="$PROJECT_DIR$/VolleyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Volley-SlidingTab.git.iml" filepath="$PROJECT_DIR$/Volley-SlidingTab.git.iml" />
+      <module fileurl="file://C:\Users\Roshaann 2.7 gpa\AndroidStudioProjects\Volley-SlidingTab.git\VolleyProject.iml" filepath="C:\Users\Roshaann 2.7 gpa\AndroidStudioProjects\Volley-SlidingTab.git\VolleyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Roshaann 2.7 gpa\AndroidStudioProjects\Volley-SlidingTab.git\app\app.iml" filepath="C:\Users\Roshaann 2.7 gpa\AndroidStudioProjects\Volley-SlidingTab.git\app\app.iml" />
     </modules>
   </component>
 </project>

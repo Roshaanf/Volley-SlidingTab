@@ -1,9 +1,13 @@
 package com.example.roshaanfarrukh.volleyproject.ui.activities;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.roshaanfarrukh.volleyproject.R;
@@ -20,9 +24,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.practise);
 
         tabLayout=findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
+
+        tabLayout.addTab(tabLayout.newTab().setCustomView(R.layout.custom_tab_view));//.setText("tab1").setIcon(android.R.drawable.ic_delete));
+        tabLayout.addTab(tabLayout.newTab().setCustomView(R.layout.custom_tab_view));//.setText("tab1").setIcon(android.R.drawable.ic_delete));
+        tabLayout.addTab(tabLayout.newTab().setCustomView(R.layout.custom_tab_view));//.setText("tab1").setIcon(android.R.drawable.ic_delete));
+
+        System.out.println("tabs "+tabLayout.getTabCount());
+//
+        TextView tv=tabLayout.getTabAt(0).getCustomView().findViewById(R.id.text);
+        tv.setText("hey");
+        tv.setTextColor(Color.WHITE);
+        ImageView iv=tabLayout.getTabAt(0).getCustomView().findViewById(R.id.img);
+        iv.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_delete));
+
+        TextView tv2=tabLayout.getTabAt(1).getCustomView().findViewById(R.id.text);
+        tv2.setText("heoy");tv.setTextColor(Color.WHITE);
+        ImageView iv2=tabLayout.getTabAt(1).getCustomView().findViewById(R.id.img);
+        iv2.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_delete));
+
+        TextView tv3=tabLayout.getTabAt(2).getCustomView().findViewById(R.id.text);
+        tv3.setText("heyp");tv.setTextColor(Color.WHITE);
+        ImageView iv3=tabLayout.getTabAt(2).getCustomView().findViewById(R.id.img);
+        iv3.setImageDrawable(getResources().getDrawable(android.R.drawable.ic_delete));
+
 
         viewPager= findViewById(R.id.view_pager);
 

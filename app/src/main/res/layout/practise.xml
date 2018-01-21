@@ -15,7 +15,6 @@
         app:tabIndicatorHeight="5dp"
         app:tabSelectedTextColor="#ff00ff"
         app:tabTextColor="#00ffff"
-        android:paddingBottom="-10dp"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
